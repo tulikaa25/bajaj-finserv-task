@@ -46,7 +46,7 @@ public class BajajFinservTaskApplication {
                 Map<String, String> requestBody = new HashMap<>();
                 requestBody.put("name", "Tulika Basu");
                 requestBody.put("regNo", "22BCE11161");
-                requestBody.put("email", "tulikabasu257@gmail.com");
+                requestBody.put("email", "tulikabasu2022@vitbhopal.ac.in");
 
                 HttpHeaders headers = new HttpHeaders();
                 headers.setContentType(MediaType.APPLICATION_JSON);
@@ -72,7 +72,7 @@ public class BajajFinservTaskApplication {
                             // 3. Send SQL solution to the received webhook
                             HttpHeaders webhookHeaders = new HttpHeaders();
                             webhookHeaders.setContentType(MediaType.APPLICATION_JSON);
-                            webhookHeaders.set("Authorization", "Bearer " + accessToken);
+                            webhookHeaders.set("Authorization", accessToken);
                             Map<String, String> webhookRequestBody = new HashMap<>();
                             webhookRequestBody.put("finalQuery", finalSqlQuery);
 
